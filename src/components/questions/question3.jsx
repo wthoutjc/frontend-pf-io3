@@ -116,7 +116,7 @@ const Question3 = ({ answers, setAnswers }) => {
         <div className="question">
           <h3>Statement</h3>
           <p>
-            decision tree-based algorithm that works by examining various ways
+            Decision tree-based algorithm that works by examining various ways
             of locally partitioning or splitting the data into smaller segments
             based on different values and combinations of predictors, selecting
             the best performing splits, and then repeats this process

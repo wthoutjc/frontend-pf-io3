@@ -175,10 +175,7 @@ const Slider = () => {
                 className="finish-btn"
                 onClick={() => handleSendAnswers()}
               >
-                <p>TERMINAR Y ENVIAR</p>
-                <p>
-                  <MdIcons.MdSend />
-                </p>
+                ENVIAR
               </button>
             )}
           </div>

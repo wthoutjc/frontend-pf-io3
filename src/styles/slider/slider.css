@@ -126,7 +126,7 @@
 .finish-btn:hover {
   opacity: 1 !important;
 }
-.finish-btn  p:last-child {
+.finish-btn p:last-child {
   display: none;
 }
 .card-question {
@@ -159,14 +159,17 @@
     font-size: 120%;
   }
   .slider-content-footer .btn-move button {
-    width: 45%;  
+    width: 45%;
   }
   .finish-btn {
-    width: 40px;
-    height: 25px;
+    width: 70px;
+    height: 45px;
     padding: 0;
+    top: 20px;
+    right: 0px;
+    color: white
   }
-  .finish-btn  p:first-child {
+  .finish-btn p:first-child {
     display: none;
   }
 }
