@@ -86,7 +86,7 @@ const Question3 = ({ answers, setAnswers }) => {
             <button
               onClick={() =>
                 window.open(
-                  'https://drive.google.com/file/d/1OZuDrl2AGu0V8S-omVyZ33Py5M7wCRdh/view?usp=sharing'
+                  'https://www.minitab.com/es-mx/predictive-analytics/cart/#:~:text=Para%20quienes%20no%20est%C3%A1n%20familiarizados,valores%20y%20combinaciones%20de%20predictores.'
                 )
               }
             >
@@ -95,7 +95,7 @@ const Question3 = ({ answers, setAnswers }) => {
             <button
               onClick={() =>
                 window.open(
-                  'https://www.ingenioempresa.com/modelos-probabilisticos-inventario/'
+                  'https://www.lucidchart.com/pages/es/que-es-un-diagrama-de-arbol-de-decision'
                 )
               }
             >
@@ -105,7 +105,7 @@ const Question3 = ({ answers, setAnswers }) => {
             <button
               onClick={() =>
                 window.open(
-                  'https://es.slideshare.net/Niurka0302/inventario-probabilistico-28957466'
+                  'https://www.maximaformacion.es/blog-dat/que-son-los-arboles-de-decision-y-para-que-sirven/'
                 )
               }
             >
@@ -115,44 +115,14 @@ const Question3 = ({ answers, setAnswers }) => {
         </div>
         <div className="question">
           <h3>Statement</h3>
-          <p>Third Question</p>
-          {/* <ul>
-            <li>
-              1.
-              <p>
-                Los inventarios probabilísticos con demanda independiente se
-                caracterizan por la suposición de que sólo se conoce la
-                probabilidad de distribución de la demanda durante el tiempo de
-                producción.
-              </p>
-            </li>
-            <li>
-              2.
-              <p>
-                En todo modelo probabilístico de inventario es crucial la
-                determinación del punto de pedido (R) y el tamaño de pedido (Q),
-                ya que el costo anual esperado del faltante se afectará por
-                estos valores.
-              </p>
-            </li>
-            <li>
-              3.
-              <p>
-                El propósito de todo modelo de inventario probabilístico es en
-                esencia, disminuir en lo posible el costo total esperado para un
-                periodo determinado.
-              </p>
-            </li>
-            <li>
-              4.
-              <p>
-                Los inventarios probabilísticos son a su vez modelos
-                estocásticos cuando algunas variables están en función de un
-                modelo de probabilidad. Existen dos tipos de modelos
-                estocásticos (punto de reorden y revisión periódica)
-              </p>
-            </li>
-          </ul> */}
+          <p>
+            decision tree-based algorithm that works by examining various ways
+            of locally partitioning or splitting the data into smaller segments
+            based on different values and combinations of predictors, selecting
+            the best performing splits, and then repeats this process
+            recursively until the optimal set is found.
+          </p>
+          <p>Which algorithm is the above sentence referring to?</p>
         </div>
       </div>
       <div className="answers-card">
@@ -165,7 +135,7 @@ const Question3 = ({ answers, setAnswers }) => {
               id="rta-A"
               onChange={() => handleChecked(1)}
             />
-            <label htmlFor="rta-A">A. 1</label>
+            <label htmlFor="rta-A">A. ID3</label>
           </li>
           <li>
             <input
@@ -174,7 +144,7 @@ const Question3 = ({ answers, setAnswers }) => {
               id="rta-B"
               onChange={() => handleChecked(2)}
             />
-            <label htmlFor="rta-B">B. 2</label>
+            <label htmlFor="rta-B">B. CART</label>
           </li>
           <li>
             <input
@@ -183,7 +153,7 @@ const Question3 = ({ answers, setAnswers }) => {
               id="rta-C"
               onChange={() => handleChecked(3)}
             />
-            <label htmlFor="rta-C">C. 3</label>
+            <label htmlFor="rta-C">C. MARS</label>
           </li>
           <li>
             <input
@@ -192,7 +162,7 @@ const Question3 = ({ answers, setAnswers }) => {
               id="rta-D"
               onChange={() => handleChecked(4)}
             />
-            <label htmlFor="rta-D">D. 4</label>
+            <label htmlFor="rta-D">D. CHAID</label>
           </li>
         </ul>
       </div>

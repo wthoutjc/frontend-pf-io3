@@ -92,7 +92,7 @@ const Login = ({ setRenderRegister, setRenderModal, setChildrenModal }) => {
         <div className="warning-time">
           <h3> NOTA:</h3>
           <p>
-            Cuando inicies sesión va a iniciar el tiempo de 40 minutos para tu
+            Cuando inicies sesión va a iniciar el tiempo de 60 minutos para tu
             prueba
           </p>
         </div>

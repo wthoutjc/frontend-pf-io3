@@ -161,7 +161,7 @@ const ConfirmData = () => {
           <hr />
           <h3>Consideraciones</h3>
           <p>La prueba consta de cinco preguntas.</p>
-          <p>La prueba consta de un tiempo total de 40 minutos.</p>
+          <p>La prueba consta de un tiempo total de 60 minutos.</p>
           <p>
             La calificación de tu prueba será en base a la información
             registrada en nuestro sistema, por favor valídela.
