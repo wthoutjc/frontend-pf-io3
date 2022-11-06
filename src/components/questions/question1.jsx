@@ -19,20 +19,20 @@ const Question1Hint = () => {
   return (
     <>
       <div className="pista-container">
-        <h3>This hint is about question 1.</h3>
+        <h3>Esta pista esta relacionada con el punto 1.</h3>
         <div className="pista-options">
           <button
             onClick={() => {
               setRenderPista(true)
             }}
           >
-            Get hint
+            Obtener mi pista
           </button>
         </div>
         {renderPista && (
           <>
             <div className="pista">
-              <p>B is not the answer.</p>
+              <p>No es la B..</p>
             </div>
             <div className="pista-options">
               <button
@@ -40,7 +40,7 @@ const Question1Hint = () => {
                   setRenderPista2(true)
                 }}
               >
-                Get extra hint
+                Obtener pista extra
               </button>
             </div>
           </>
@@ -48,7 +48,10 @@ const Question1Hint = () => {
         {renderPista2 && (
           <>
             <div className="pista">
-              <p>The problem is about inventorys.</p>
+              <p>
+                basado en la definición de completa incertidumbre y de criterio
+                Maximin.
+              </p>
             </div>
           </>
         )}
@@ -100,48 +103,13 @@ const Question1 = ({ answers, setAnswers }) => {
         />
       )}
       <div className="header-card">
-        <div className="helpers">
-          <div className="helpers-btn">
-            <button
-              onClick={() =>
-                window.open(
-                  'https://drive.google.com/file/d/12teGtHwjC8GJMmLjhgAMX8W0nHTvarp2/view?usp=sharing'
-                )
-              }
-            >
-              Theoretical support
-            </button>
-            <button
-              onClick={() =>
-                window.open(
-                  'https://drive.google.com/file/d/1-vGce2A2lUOOEAg5H2zaK-7uDG6y7mM5/view?usp=sharing'
-                )
-              }
-            >
-              Theoretical support
-            </button>
-            <button onClick={handleQ4Pista}>Hint</button>
-            <button
-              onClick={() =>
-                window.open(
-                  'https://docs.google.com/document/d/1hcmv81aJBFmHUfYAuMVkY-d3YDw33Xp3/edit?usp=sharing&ouid=106792408206325515763&rtpof=true&sd=true'
-                )
-              }
-            >
-              Theoretical support
-            </button>
-          </div>
-        </div>
         <div className="question">
           <h3>Enunciado</h3>
-          <p>Complete the sentence below</p>
           <p>
-            The __________ problem has to do with holding an item in reserve to
-            meet fluctuations in _______. Overstocking an item increases the
-            cost of ________ and ________, and understocking disrupts
-            ___________ and/or ______. The result is to seek an inventory level
-            that balances the two extremes by minimizing an appropriate _____
-            function.
+            La (1) __________ es una variable de entorno que utiliza el
+            (2)_______________ para seleccionar una estratégia según el criterio
+            como por ejemplo el criterio (3) ___________ donde se minimiza la
+            pérdida basada en la posibilidad pesimista .{' '}
           </p>
         </div>
       </div>
@@ -156,7 +124,7 @@ const Question1 = ({ answers, setAnswers }) => {
               onChange={() => handleChecked(1)}
             />
             <label htmlFor="rta-A">
-              A. inventory, demand, production, sales, capital, storage, cost
+              A. (1) completa certeza; (2) teorema de bayes; (3) maximax
             </label>
           </li>
           <li>
@@ -167,7 +135,7 @@ const Question1 = ({ answers, setAnswers }) => {
               onChange={() => handleChecked(2)}
             />
             <label htmlFor="rta-B">
-              B. deterministic, capital, cost, sales, inventory, demand, offer
+              B. (1) completa incertidumbre; (2) teorema de bayes; (3) maximin
             </label>
           </li>
           <li>
@@ -178,7 +146,7 @@ const Question1 = ({ answers, setAnswers }) => {
               onChange={() => handleChecked(3)}
             />
             <label htmlFor="rta-C">
-              C. inventory, demand, capital, storage, production, sales, cost
+              C. (1) completa incertidumbre; (2) criterio de bayes; (3) maximin
             </label>
           </li>
           <li>
@@ -189,7 +157,7 @@ const Question1 = ({ answers, setAnswers }) => {
               onChange={() => handleChecked(4)}
             />
             <label htmlFor="rta-D">
-              D. probability, stock, production, offer, cost, inventory, demand
+              D. (1) completa certeza; (2) criterio de bayes; (3) maximax
             </label>
           </li>
         </ul>

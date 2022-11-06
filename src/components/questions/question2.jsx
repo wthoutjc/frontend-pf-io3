@@ -81,43 +81,56 @@ const Question2 = ({ answers, setAnswers }) => {
         />
       )}
       <div className="header-card">
-        <div className="helpers">
-          <div className="helpers-btn">
-            <button
-              onClick={() =>
-                window.open(
-                  'https://www.ingenioempresa.com/modelos-deterministicos-de-inventario/#:~:text=%C2%BFQu%C3%A9%20son%20los%20modelos%20determ%C3%ADnisticos,pedidos%20reales%20de%20los%20clientes.'
-                )
-              }
-            >
-              Ayuda teórica
-            </button>
-            <button
-              onClick={() =>
-                window.open(
-                  'http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0186-10422012000300011'
-                )
-              }
-            >
-              Ayuda teórica
-            </button>
-            <button onClick={handleQ2Pista}>Pista</button>
-            <button
-              onClick={() =>
-                window.open(
-                  'http://repositorio.cucea.udg.mx/jspui/bitstream/123456789/468/3/Modelos%20determin%C3%ADsticos%20de%20control%20de%20inventarios.pdf'
-                )
-              }
-            >
-              Ayuda teórica
-            </button>
-          </div>
-        </div>
         <div className="question">
           <h3>Enunciado</h3>
           <p>
-            De los siguientes, marque el que usted considera son modelos de
-            inventarios determinísticos:
+            Una empresa va desarrollar el plan estratégico, donde se piensa en
+            contratar un especialista o por el contrario se piensa hacer por
+            cuenta propia, desplegando así la siguiente matriz que empresa la
+            ganancia o pérdida en dólares:
+          </p>
+          <table>
+            <thead
+              style={{
+                borderBottom: '1px solid #7f8c8d',
+              }}
+            >
+              <tr>
+                <th></th>
+                <th>S1: Éxito del plan estratégico</th>
+                <th>S2: Fracaso del plan estratégico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  style={{
+                    backgroundColor: '#222f3e',
+                    color: 'white',
+                  }}
+                >
+                  <strong>D1: Desarrollo por cuenta propia</strong>
+                </td>
+                <td>350</td>
+                <td>545</td>
+              </tr>
+              <tr>
+                <td
+                  style={{
+                    backgroundColor: '#222f3e',
+                    color: 'white',
+                  }}
+                >
+                  <strong>D2:Contratar a un especialista</strong>
+                </td>
+                <td>-240</td>
+                <td>-370</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Por medio del criterio a priori, y teniendo en cuenta que la
+            efectividad del plan estratégico es de un 65%, se halló que:
           </p>
         </div>
       </div>
@@ -131,7 +144,10 @@ const Question2 = ({ answers, setAnswers }) => {
               id="rta-A"
               onChange={() => handleChecked(1)}
             />
-            <label htmlFor="rta-A">A. B y C</label>
+            <label htmlFor="rta-A">
+              A. Se decidió contratar un especialista, ya que esta decisión
+              consta con una esperanza de 143.5
+            </label>
           </li>
           <li>
             <input
@@ -141,8 +157,8 @@ const Question2 = ({ answers, setAnswers }) => {
               onChange={() => handleChecked(2)}
             />
             <label htmlFor="rta-B">
-              B. Inventarios por periodo, inventarios por pedido, método de un
-              solo lote, método de lote por lote.
+              B. Se decidió desarrollarlo por cuenta propia, ya que esta
+              decisión consta con una esperanza de 310.15
             </label>
           </li>
           <li>
@@ -153,8 +169,8 @@ const Question2 = ({ answers, setAnswers }) => {
               onChange={() => handleChecked(3)}
             />
             <label htmlFor="rta-C">
-              C. EOQ básico, EOQ con descuentos por cantidad, cantidad económica
-              a producir.
+              C. Se decidió desarrollarlo por cuenta propia, ya que esta
+              decisión consta con una esperanza de 143.5
             </label>
           </li>
           <li>
@@ -165,10 +181,8 @@ const Question2 = ({ answers, setAnswers }) => {
               onChange={() => handleChecked(4)}
             />
             <label htmlFor="rta-D">
-              D. Registro de asistencia de trabajadores, conteo de empanadas por
-              parte del gerente a los peones de la institución, una lista de
-              faltas de los prestadores de servicio de aseo y mantenimiento
-              general.
+              D. Se decidió contratar un especialista, ya que esta decisión
+              consta con una esperanza de 224.75
             </label>
           </li>
         </ul>

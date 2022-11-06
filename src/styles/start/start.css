@@ -13,14 +13,14 @@ body {
   position: absolute;
 }
 :root {
-  --color-negroPrimario: #2c3a47;
-  --color-negroSecundario: #2f3640;
-  --color-blancoPrimario: #c7ecee;
-  --color-blancoSecundario: #d8d8d8;
+  --color-negroPrimario: #112233;
+  --color-negroSecundario: #001122;
+  --color-blancoPrimario: #d1d8e0;
+  --color-blancoSecundario: #a5b1c2;
   --color-grisPrimario: #a2a7ad;
   --color-grisSecundario: #686868;
-  --color-okPrimario: #2ecc71;
-  --color-okSecundario: #00ff6a;
+  --color-okPrimario: #20bf6b;
+  --color-okSecundario: #26de81;
   --color-errorPrimario: rgb(177, 41, 41);
   --color-errorSecundario: #f1252c;
   --color-azulPrimario: #1e90ff;

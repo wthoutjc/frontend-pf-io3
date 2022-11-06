@@ -27,11 +27,10 @@ const Start = () => {
       )}
       <div className="start">
         <div className="start-by">
-          <h1>App Design By</h1>
-          <h3>Jorge Alberto Galeano - 20172020060</h3>
-          <a href="#">GitHub</a>
-          <h3>Juan Camilo Ramírez - 20181020089</h3>
-          <a href="#">GitHub</a>
+          <h1>Web Application Presented By</h1>
+          <h3>Grupo 1</h3>
+          <h3>Grupo 2.A</h3>
+          <h3>Grupo 2.B</h3>
         </div>
         {!renderRegister ? (
           <div className="login">

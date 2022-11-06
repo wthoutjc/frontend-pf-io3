@@ -18,20 +18,20 @@ const Question3Pista = () => {
   return (
     <>
       <div className="pista-container">
-        <h3>Esta pista esta relacionada con el punto 3.</h3>
+        <h3>This hint is about question 3.</h3>
         <div className="pista-options">
           <button
             onClick={() => {
               setRenderPista(true)
             }}
           >
-            Obtener mi pista
+            Get hint
           </button>
         </div>
       </div>
       {renderPista && (
         <div className="pista">
-          <p>No es la A.</p>
+          <p>A is not the answer.</p>
         </div>
       )}
     </>
@@ -90,7 +90,7 @@ const Question3 = ({ answers, setAnswers }) => {
                 )
               }
             >
-              Ayuda teórica
+              Theoretical support
             </button>
             <button
               onClick={() =>
@@ -99,9 +99,9 @@ const Question3 = ({ answers, setAnswers }) => {
                 )
               }
             >
-              Ayuda teórica
+              Theoretical support
             </button>
-            <button onClick={handleQ3Pista}>Pista</button>
+            <button onClick={handleQ3Pista}>Hint</button>
             <button
               onClick={() =>
                 window.open(
@@ -109,17 +109,14 @@ const Question3 = ({ answers, setAnswers }) => {
                 )
               }
             >
-              Ayuda teórica
+              Theoretical support
             </button>
           </div>
         </div>
         <div className="question">
-          <h3>Enunciado</h3>
-          <p>
-            De las siguientes afirmaciones, ¿Cuáles describen ESPECÍFICAMENTE
-            los modelos de inventario probabilísticos?
-          </p>
-          <ul>
+          <h3>Statement</h3>
+          <p>Third Question</p>
+          {/* <ul>
             <li>
               1.
               <p>
@@ -155,11 +152,11 @@ const Question3 = ({ answers, setAnswers }) => {
                 estocásticos (punto de reorden y revisión periódica)
               </p>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div className="answers-card">
-        <h4>Seleccione una única respuesta</h4>
+        <h4>Select only one answer</h4>
         <ul ref={answersDOM}>
           <li>
             <input
@@ -168,7 +165,7 @@ const Question3 = ({ answers, setAnswers }) => {
               id="rta-A"
               onChange={() => handleChecked(1)}
             />
-            <label htmlFor="rta-A">A. 1 y 3</label>
+            <label htmlFor="rta-A">A. 1</label>
           </li>
           <li>
             <input
@@ -177,7 +174,7 @@ const Question3 = ({ answers, setAnswers }) => {
               id="rta-B"
               onChange={() => handleChecked(2)}
             />
-            <label htmlFor="rta-B">B. 2 y 4</label>
+            <label htmlFor="rta-B">B. 2</label>
           </li>
           <li>
             <input
@@ -186,7 +183,7 @@ const Question3 = ({ answers, setAnswers }) => {
               id="rta-C"
               onChange={() => handleChecked(3)}
             />
-            <label htmlFor="rta-C">C. 1 y 4</label>
+            <label htmlFor="rta-C">C. 3</label>
           </li>
           <li>
             <input
@@ -195,7 +192,7 @@ const Question3 = ({ answers, setAnswers }) => {
               id="rta-D"
               onChange={() => handleChecked(4)}
             />
-            <label htmlFor="rta-D">D. Todas las anteriores</label>
+            <label htmlFor="rta-D">D. 4</label>
           </li>
         </ul>
       </div>
