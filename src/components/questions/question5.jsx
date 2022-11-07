@@ -211,7 +211,6 @@ const Question5 = ({ answers, setAnswers }) => {
           style={{
             display: 'flex',
             justifyContent: 'flex-start',
-            overflow: 'auto',
           }}
         >
           <li>
